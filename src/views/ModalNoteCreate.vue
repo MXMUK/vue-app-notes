@@ -74,7 +74,7 @@ export default {
       <header className="modal-card-head is-justify-content-space-between">
         <RouterLink to="/">
           <button
-            class="button is-success is-one-quarter"
+            class="button is-success"
             @click="handleSubmit"
           >
             <span class="icon is-small">

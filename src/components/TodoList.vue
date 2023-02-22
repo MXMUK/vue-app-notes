@@ -61,8 +61,8 @@ export default {
 
         <span class="note__title">{{ todo.name }}</span>
         <button type="button" class="note__remove" @click="deleteTodo(index)">
-            ×
-          </button>
+          ×
+        </button>
       </div>
     </section>
   </div>
