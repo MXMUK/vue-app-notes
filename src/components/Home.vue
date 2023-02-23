@@ -32,9 +32,13 @@ export default {
 
 <template>
   <div class="noteapp">
-    <RouterLink :to="`/create/`"><div class="noteapp__new">+</div></RouterLink>
+    
 
-    <h1 class="noteapp__title">Notes</h1>
+    <h1 class="noteapp__title">
+      Notes
+
+      <RouterLink :to="`/create/`"><div class="noteapp__new">+</div></RouterLink>
+    </h1>
 
     <div v-for="note of notes" v-bind:key="note.id" class="box noteapp__box">
       <RouterLink :to="`/edit/:${note.id}`">
