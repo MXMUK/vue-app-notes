@@ -13,15 +13,6 @@ export default {
     };
   },
 
-  watch: {
-    notes: {
-      deep: true,
-      handler() {
-        localStorage.setItem("notes", JSON.stringify(this.notes));
-      },
-    },
-  },
-
   methods: {
     todosPreview(todos) {
       return todos.slice(0, 3);
@@ -49,7 +40,7 @@ export default {
         <div class="noteapp__delete">🗑</div>
       </RouterLink>
 
-      <h1 class="content is-large is-full">{{ note.title }}</h1>
+      <h1 class="content is-large">{{ note.title }}</h1>
 
       <p class="noteapp__todo" v-if="note.todos.length">
         <strong>Todo:</strong>

@@ -98,7 +98,6 @@ export default {
               <div className="modal-card-title has-text-weight-medium">
                 <input
                   type="text"
-                  ref="{newTodoField}"
                   class="noteapp__new-todo"
                   placeholder="Enter a name of note"
                   required

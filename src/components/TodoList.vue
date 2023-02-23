@@ -36,7 +36,6 @@ export default {
       <form @submit.prevent="handleSubmit">
         <input
           type="text"
-          ref="{newTodoField}"
           class="noteapp__new-todo"
           placeholder="What needs to be done?"
           v-model="title"
