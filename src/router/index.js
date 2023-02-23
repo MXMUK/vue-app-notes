@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
-import ModalNote from '../views/ModalNote.vue'
-import ModalNoteCreate from '../views/ModalNoteCreate.vue'
-import ModalNoteDelete from '../views/ModalNoteDelete.vue'
+// import ModalNote from '../views/ModalNote.vue'
+// import ModalNoteCreate from '../views/ModalNoteCreate.vue'
+// import ModalNoteDelete from '../views/ModalNoteDelete.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,17 +15,17 @@ const router = createRouter({
     {
       path: '/edit/:id',
       name: 'edit',
-      component: ModalNote
+      component: () => import('../views/ModalNote.vue')
     },
     {
       path: '/create',
       name: 'create',
-      component: ModalNoteCreate
+      component: () => import('../views/ModalNoteCreate.vue')
     },
     {
       path: '/delete/:id',
       name: 'delete',
-      component: ModalNoteDelete
+      component: () => import('../views/ModalNoteDelete.vue')
     }
   ]
 })
